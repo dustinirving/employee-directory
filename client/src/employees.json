@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1,
+    "first": "Dustin",
+    "last": "Irving",
+    "department": "Information Technology",
+    "position": "Web Developer"
+  },
+  {
+    "id": 2,
+    "first": "Rodney",
+    "last": "Green",
+    "department": "Engineering",
+    "position": "Lead Engineer"
+  },
+  {
+    "id": 3,
+    "first": "Mia",
+    "last": "Byeon",
+    "department": "Finance",
+    "position": "Accountant"
+  }
+]

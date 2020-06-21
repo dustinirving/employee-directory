@@ -1,10 +1,10 @@
 import React from 'react'
 
-function Dropdown () {
+function Dropdown (props) {
   return (
-    <div class='dropdown'>
+    <div className='dropdown'>
       <button
-        class='btn btn-secondary dropdown-toggle'
+        className='btn btn-secondary dropdown-toggle'
         type='button'
         id='dropdownMenuButton'
         data-toggle='dropdown'
@@ -13,15 +13,41 @@ function Dropdown () {
       >
         Order By
       </button>
-      <div class='dropdown-menu' aria-labelledby='dropdownMenuButton'>
-        <a class='dropdown-item' href='#'>
-          Action
+      <div className='dropdown-menu' aria-labelledby='dropdownMenuButton'>
+        <a
+          className='dropdown-item'
+          href='#'
+          onClick={() => props.orderHandler('id')}
+        >
+          ID
         </a>
-        <a class='dropdown-item' href='#'>
-          Another action
+        <a
+          className='dropdown-item'
+          href='#'
+          onClick={() => props.orderHandler('first')}
+        >
+          First Name
         </a>
-        <a class='dropdown-item' href='#'>
-          Something else here
+        <a
+          className='dropdown-item'
+          href='#'
+          onClick={() => props.orderHandler('last')}
+        >
+          Last Name
+        </a>
+        <a
+          className='dropdown-item'
+          href='#'
+          onClick={() => props.orderHandler('department')}
+        >
+          Department
+        </a>
+        <a
+          className='dropdown-item'
+          href='#'
+          onClick={() => props.orderHandler('position')}
+        >
+          Position
         </a>
       </div>
     </div>

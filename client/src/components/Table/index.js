@@ -1,9 +1,9 @@
 import React from 'react'
 import Employee from '../Employee'
 
-function Table () {
+function Table (props) {
   return (
-    <table class='table table-striped'>
+    <table className='table table-striped'>
       <thead>
         <tr>
           <th scope='col'>#</th>
@@ -14,7 +14,16 @@ function Table () {
         </tr>
       </thead>
       <tbody>
-        <Employee />
+        {props.employees.map(employee => (
+          <Employee
+            id={employee.id}
+            key={employee.id}
+            first={employee.first}
+            last={employee.last}
+            department={employee.department}
+            position={employee.position}
+          />
+        ))}
       </tbody>
     </table>
   )
