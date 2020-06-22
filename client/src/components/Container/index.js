@@ -22,16 +22,12 @@ function Container () {
   const filterHandler = search => {
     const filteredEmployees = employees.filter(employee => {
       const values = Object.values(employee)
-      let keep = 'no'
-      values.forEach(value => {
-        if (typeof value === 'string' && value.includes(search)) {
-          keep = 'yes'
+      for (let value of values) {
+        const stringValue = value.toString()
+        if (stringValue.includes(search)) {
+          return employee
         }
-        if (typeof value === 'number' && value == search) {
-          keep = 'yes'
-        }
-      })
-      if (keep === 'yes') return employee
+      }
     })
     setEmployees([...filteredEmployees])
   }
