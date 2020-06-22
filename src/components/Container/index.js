@@ -20,11 +20,12 @@ function Container () {
   }
 
   const filterHandler = search => {
+    const lowerSearch = search.toLowerCase()
     const filteredEmployees = employees.filter(employee => {
       const values = Object.values(employee)
       for (let value of values) {
-        const stringValue = value.toString()
-        if (stringValue.includes(search)) {
+        const stringValue = value.toString().toLowerCase()
+        if (stringValue.includes(lowerSearch)) {
           return employee
         }
       }

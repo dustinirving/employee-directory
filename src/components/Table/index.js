@@ -6,7 +6,7 @@ function Table (props) {
     <table className='table'>
       <thead>
         <tr>
-          <th scope='col'>ID #</th>
+          <th scope='col'>ID</th>
           <th scope='col'>First</th>
           <th scope='col'>Last</th>
           <th scope='col'>Department</th>
