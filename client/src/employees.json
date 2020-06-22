@@ -4,14 +4,14 @@
     "first": "Dustin",
     "last": "Irving",
     "department": "Information Technology",
-    "position": "Web Developer"
+    "position": "Senior Web Developer"
   },
   {
     "id": 2,
     "first": "Rodney",
     "last": "Green",
-    "department": "Engineering",
-    "position": "Web Developer"
+    "department": "Information Technology",
+    "position": "Junior Web Developer"
   },
   {
     "id": 3,
@@ -19,5 +19,12 @@
     "last": "Byeon",
     "department": "Finance",
     "position": "Accountant"
+  },
+  {
+    "id": 4,
+    "first": "Oli",
+    "last": "Zhao",
+    "department": "Engineering",
+    "position": "Lead Engineer"
   }
 ]

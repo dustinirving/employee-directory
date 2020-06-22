@@ -4,7 +4,7 @@ function Dropdown (props) {
   return (
     <div className='dropdown'>
       <button
-        className='btn btn-secondary dropdown-toggle'
+        className='btn bg-info btn-secondary dropdown-toggle'
         type='button'
         id='dropdownMenuButton'
         data-toggle='dropdown'

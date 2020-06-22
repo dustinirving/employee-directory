@@ -29,7 +29,7 @@ function Container () {
         }
       }
     })
-    setEmployees([...filteredEmployees])
+    setEmployees(filteredEmployees)
   }
 
   const handleInputChange = event => {
