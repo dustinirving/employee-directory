@@ -4,7 +4,7 @@ function Dropdown (props) {
   return (
     <div className='dropdown'>
       <button
-        className='btn bg-info btn-secondary dropdown-toggle'
+        className='btn bg-info btn-secondary dropdown-toggle border-info'
         type='button'
         id='dropdownMenuButton'
         data-toggle='dropdown'
@@ -14,41 +14,36 @@ function Dropdown (props) {
         Order By
       </button>
       <div className='dropdown-menu' aria-labelledby='dropdownMenuButton'>
-        <a
+        <button
           className='dropdown-item'
-          href='#'
           onClick={() => props.orderHandler('id')}
         >
           ID
-        </a>
-        <a
+        </button>
+        <button
           className='dropdown-item'
-          href='#'
           onClick={() => props.orderHandler('first')}
         >
           First Name
-        </a>
-        <a
+        </button>
+        <button
           className='dropdown-item'
-          href='#'
           onClick={() => props.orderHandler('last')}
         >
           Last Name
-        </a>
-        <a
+        </button>
+        <button
           className='dropdown-item'
-          href='#'
           onClick={() => props.orderHandler('department')}
         >
           Department
-        </a>
-        <a
+        </button>
+        <button
           className='dropdown-item'
-          href='#'
           onClick={() => props.orderHandler('position')}
         >
           Position
-        </a>
+        </button>
       </div>
     </div>
   )
