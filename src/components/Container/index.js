@@ -20,7 +20,7 @@ function Container () {
   }
 
   const filterHandler = search => {
-    const lowerSearch = search.toLowerCase()
+    const lowerSearch = search.toLowerCase().trim()
     const filteredEmployees = employees.filter(employee => {
       const values = Object.values(employee)
       for (let value of values) {

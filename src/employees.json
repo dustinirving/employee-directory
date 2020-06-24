@@ -15,15 +15,15 @@
   },
   {
     "id": 3,
-    "first": "Mia",
-    "last": "Byeon",
+    "first": "David",
+    "last": "Little",
     "department": "Finance",
     "position": "Accountant"
   },
   {
     "id": 4,
-    "first": "Oli",
-    "last": "Zhao",
+    "first": "Joshua",
+    "last": "Smith",
     "department": "Engineering",
     "position": "Lead Engineer"
   }

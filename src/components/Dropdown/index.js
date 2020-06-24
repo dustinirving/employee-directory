@@ -1,6 +1,7 @@
 import React from 'react'
 
 function Dropdown (props) {
+  const { orderHandler } = props
   return (
     <div className='dropdown'>
       <button
@@ -14,33 +15,24 @@ function Dropdown (props) {
         Order By
       </button>
       <div className='dropdown-menu' aria-labelledby='dropdownMenuButton'>
-        <button
-          className='dropdown-item'
-          onClick={() => props.orderHandler('id')}
-        >
+        <button className='dropdown-item' onClick={() => orderHandler('id')}>
           ID
         </button>
-        <button
-          className='dropdown-item'
-          onClick={() => props.orderHandler('first')}
-        >
+        <button className='dropdown-item' onClick={() => orderHandler('first')}>
           First Name
         </button>
-        <button
-          className='dropdown-item'
-          onClick={() => props.orderHandler('last')}
-        >
+        <button className='dropdown-item' onClick={() => orderHandler('last')}>
           Last Name
         </button>
         <button
           className='dropdown-item'
-          onClick={() => props.orderHandler('department')}
+          onClick={() => orderHandler('department')}
         >
           Department
         </button>
         <button
           className='dropdown-item'
-          onClick={() => props.orderHandler('position')}
+          onClick={() => orderHandler('position')}
         >
           Position
         </button>
