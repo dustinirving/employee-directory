@@ -1,7 +1,9 @@
 import React from 'react'
 import Employee from '../Employee'
 
-function Table (props) {
+// Create a functional Component called Table that takes in employees as a prop
+function Table ({ employees }) {
+  // Create a table and dynamically insert employees into by using the map method and the Employee Component
   return (
     <table className='table'>
       <thead>
@@ -14,7 +16,7 @@ function Table (props) {
         </tr>
       </thead>
       <tbody>
-        {props.employees.map(employee => (
+        {employees.map(employee => (
           <Employee
             id={employee.id}
             key={employee.id}
@@ -29,4 +31,5 @@ function Table (props) {
   )
 }
 
+// Export the Table Component
 export default Table
