@@ -2,11 +2,11 @@
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-This application was build using React.js. It allows the user to view the entire employee directory. The user has the ability to order the emloyees by ID, First Name, Last Name, Department or Position. They can also use the search bar to filter out any of the values in the table.
+This application was build using functional components with hooks in React.js. It allows the user to view the entire employee directory. The user has the ability to order the emloyees by ID, First Name, Last Name, Department or Position. They can also use the search bar to filter out any of the values in the table.
 
 https://dustinirving.github.io/employee-directory/
 
-![Budget](./public/assets/gifs/budget.gif)
+![Budget](./gifs/directory.gif)
 
 1. [Installation](#Installation)
 2. [Usage](#Usage)
